@@ -10,11 +10,11 @@ function AboutUs() {
   return (
     <Container>
       <Row>
-        <Col>
+        <Col className='p-5'>
           <p className='fs-1 text-success fw-bold m-3' >
             ABOUT US
           </p>
-          <p className='mt-3'>
+          <p className='p-3'>
             Food for thought is here to reduce the thinking process of what to cook 
             and how to cook it.With recipes from all over the world,the perfect meal 
             is just a click away.<br/>Food for thought is here to help you make those delicious 
