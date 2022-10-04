@@ -13,7 +13,7 @@ function Home() {
          <p className='text-center fs-3'>
             Worry no more we got you
          </p> 
-         <button type="button" className="btn btn-success mt-3">Success</button> 
+         <button type="button" className="btn btn-success mt-3">Get Started</button> 
         </div>
          <AboutUs/>
         </>
