@@ -7,7 +7,7 @@ function Home() {
         <>
         
         <div className='Home text-center'>
-         <p className='text-center fs-1 fw-bold title'>
+         <p className='text-center  fw-bold title'>
           Thinking about<br/> what to cook <br/> and how to cook it?
          </p> 
          <p className='text-center fs-3'>

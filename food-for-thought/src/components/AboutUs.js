@@ -1,9 +1,9 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
-import image1 from "../images/fathul-abrar-T-qI_MI2EMA-unsplash.jpg"
-import image2 from "../images/victoria-shes-UC0HZdUitWY-unsplash.jpg"
+import image1 from "../images/jimmy-dean-Yn0l7uwBrpw-unsplash.jpg"
+import image2 from "../images/image 2.jpg"
 import image3 from "../images/lily-banse--YHSwy6uqvk-unsplash.jpg"
-
+import image4 from  "../images/image4.jpg"
 
 
 function AboutUs() {
@@ -14,17 +14,19 @@ function AboutUs() {
         <Col>
           <Row>
             <Col>
-              <img   height="200" className='img-fluid' src={image1} alt="ima"/>            
+            <img  className='img-fluid mt-3' src={image3} alt="ima"/>            
             </Col>
             <Col>
-              <img  className='img-fluid' src={image2} alt="ima"/> 
+              <img  className='img-fluid mt-3' src={image2} alt="ima"/> 
             </Col>
           </Row>
           <Row>
             <Col>
-              <img  className='img-fluid' src={image3} alt="ima"/>
+              <img  className='img-fluid mt-3' src={image1} alt="ima"/>
             </Col>
-            <Col>1 of 1</Col>
+            <Col>
+              <img  className='img-fluid mt-3' src={image4} alt="ima"/>
+            </Col>
           </Row>
         </Col>
 
