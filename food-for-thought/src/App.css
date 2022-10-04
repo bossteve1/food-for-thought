@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
 .Home{
     background-image: url("./images/brooke-lark-wMzx2nBdeng-unsplash.jpg");
     height: 100vh;
@@ -5,3 +10,10 @@
     background-size:cover;
 
 }
+.title{
+     padding-top: 18%;
+}
+/* 
+img{
+    height: auto !important;
+} */

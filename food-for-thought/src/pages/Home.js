@@ -1,18 +1,22 @@
 import React from 'react';
-import {Container,Row,Col} from 'react-bootstrap';
+import AboutUs from '../components/AboutUs';
 
 
 function Home() {
   return (
-    <Container>
-      <Row>
-        <Col>
-        <div className='Home'>
-            
+        <>
+        
+        <div className='Home text-center'>
+         <p className='text-center fs-1 fw-bold title'>
+          Thinking about<br/> what to cook <br/> and how to cook it?
+         </p> 
+         <p className='text-center fs-3'>
+            Worry no more we got you
+         </p> 
+         <button type="button" className="btn btn-success mt-3">Success</button> 
         </div>
-        </Col>
-      </Row>
-    </Container>
+         <AboutUs/>
+        </>
   )
 }
 
