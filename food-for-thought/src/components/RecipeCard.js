@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button, Card } from 'react-bootstrap'
 
 function RecipeCard() {
   return (
@@ -10,7 +11,7 @@ function RecipeCard() {
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="success">Get Recipe</Button>
       </Card.Body>
     </Card>  )
 }
