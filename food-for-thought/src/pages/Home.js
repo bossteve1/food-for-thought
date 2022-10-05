@@ -1,10 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import AboutUs from '../components/AboutUs';
 import Footer from '../components/Footer';
 import NavBar from '../components/Navbar';
 
 
+
 function Home() {
+  let navigate=useNavigate();
   return (
         <>
         <NavBar/>
@@ -15,7 +18,7 @@ function Home() {
          <p className='text-center fs-3'>
             Worry no more we got you
          </p> 
-         <button type="button" className="btn btn-success mt-3">Get Started</button> 
+        <button onClick={() => {navigate ('/recipes')} }  type="button" className="btn btn-success mt-3">Get Started</button> 
         </div>
          <AboutUs/>
          <Footer/>
