@@ -15,9 +15,9 @@ function AboutUs() {
             ABOUT US
           </p>
           <p className='p-3'>
-            Food for thought is here to reduce the thinking process of what to cook 
+            Food4thought is here to reduce the thinking process of what to cook 
             and how to cook it.With recipes from all over the world,the perfect meal 
-            is just a click away.<br/>Food for thought is here to help you make those delicious 
+            is just a click away.<br/>Food4thought is here to help you make those delicious 
             and scrumptous meals with very little stress.
           </p>
         </Col>
