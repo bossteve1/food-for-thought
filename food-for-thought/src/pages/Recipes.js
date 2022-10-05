@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import RecipeNav from '../components/RecipeNav';
 
 function Recipes() {
   return (
-    <div>Recipes</div>
+    <>
+    <RecipeNav/>
+    <div></div>
+    </>
   )
+  
 }
 
 export default Recipes
