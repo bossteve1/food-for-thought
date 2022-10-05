@@ -9,6 +9,7 @@ function RecipeNav() {
     <p className='text-black fw-bold navbar-brand pt-2 me-auto fs-3 fst-italic'>
       Food4Thought
     </p>
+    <NavLink className='m-3 text-white fw-bold' to="/" exact > Home</NavLink>
     <NavLink className='m-3 text-white fw-bold' to="/recipes" exact >Recipes</NavLink>
     <NavLink className='m-3 text-white fw-bold' to="/indian" exact > Indian</NavLink>
     <NavLink className='m-3 text-white fw-bold' to="/chinese" ecact > Chinese</NavLink>
