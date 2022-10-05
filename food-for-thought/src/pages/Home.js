@@ -1,5 +1,6 @@
 import React from 'react';
 import AboutUs from '../components/AboutUs';
+import Footer from '../components/Footer';
 
 
 function Home() {
@@ -16,6 +17,7 @@ function Home() {
          <button type="button" className="btn btn-success mt-3">Get Started</button> 
         </div>
          <AboutUs/>
+         <Footer/>
         </>
   )
 }

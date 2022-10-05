@@ -10,7 +10,7 @@ function AboutUs() {
   return (
     <Container>
       <Row>
-        <Col className='p-5'>
+        <Col xs={12} md={6}className='p-5'>
           <p className='fs-1 text-success fw-bold m-3' >
             ABOUT US
           </p>
@@ -21,7 +21,7 @@ function AboutUs() {
             and scrumptous meals with very little stress.
           </p>
         </Col>
-        <Col>
+        <Col xs={12} md={6}>
           <Row>
             <Col>
             <img  className='img-fluid mt-3' src={image3} alt="ima"/>            
@@ -32,10 +32,10 @@ function AboutUs() {
           </Row>
           <Row>
             <Col>
-              <img  className='img-fluid mt-3' src={image1} alt="ima"/>
+              <img  className='img-fluid mt-3 mb-3' src={image1} alt="ima"/>
             </Col>
             <Col>
-              <img  className='img-fluid mt-3' src={image4} alt="ima"/>
+              <img  className='img-fluid mt-3 mb-3' src={image4} alt="ima"/>
             </Col>
           </Row>
         </Col>
