@@ -1,12 +1,13 @@
 import React from 'react';
 import AboutUs from '../components/AboutUs';
 import Footer from '../components/Footer';
+import NavBar from '../components/Navbar';
 
 
 function Home() {
   return (
         <>
-        
+        <NavBar/>
         <div className='Home text-center'>
          <p className='text-center  fw-bold title'>
           Thinking about<br/> what to cook <br/> and how to cook it?

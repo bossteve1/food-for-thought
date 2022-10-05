@@ -1,14 +1,19 @@
 import React from 'react'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {Nav} from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
 
 const NavBar = () => {
   return (
-    <Nav className="bg-dark text-white p-3" defaultActiveKey="/" as="ul">
-      <NavLink className='m-2' to="/" exact > Home</NavLink>
-      <NavLink className='m-2' to="/About us" exact > About us</NavLink>
-      <NavLink className='m-2' to="/Recipes" exact >Recipes</NavLink>
+    
+    <Nav className="bg-success text-white p-2" defaultActiveKey="/" as="ul">
+      <p className='text-black fw-bold navbar-brand pt-2 me-auto'>
+        Food4Thought
+      </p>
+      <NavLink className='m-2 text-white fw-bold' to="/" exact > Home</NavLink>
+      <AnchorLink className='m-2 text-white fw-bold' href='#about'> About us</AnchorLink>
+      <NavLink className='m-2 text-white fw-bold' to="/recipes" exact >Recipes</NavLink>
       
     </Nav>
   )

@@ -8,7 +8,7 @@ import image4 from  "../images/image4.jpg"
 
 function AboutUs() {
   return (
-    <Container>
+    <Container id="about">
       <Row>
         <Col xs={12} md={6}className='p-5'>
           <p className='fs-1 text-success fw-bold m-3' >
