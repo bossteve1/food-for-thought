@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import RecipeNav from '../components/RecipeNav';
+
 
 function Indian() {
   return (
-    <div>Indian</div>
+    <>
+    <RecipeNav/>
+    
+    </>
   )
 }
 

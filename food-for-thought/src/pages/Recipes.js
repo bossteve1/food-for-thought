@@ -5,7 +5,7 @@ function Recipes() {
   return (
     <>
     <RecipeNav/>
-    <div></div>
+    
     </>
   )
   
