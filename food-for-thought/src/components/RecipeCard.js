@@ -1,32 +1,38 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Button, Card, Modal } from 'react-bootstrap'
 
-function RecipeCard() {
+function RecipeCard({recipe}) {
   const [show, setShow] = useState(false);
+  const [details, setDetails] = useState([]);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  useEffect(() => {
+    fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${recipe.idMeal}`)
+      .then((r) => r.json())
+      .then((details) => setDetails(details.meals[0]));
+  }, []);
 
   return (
     <>
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src={recipe.strMealThumb} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
+        <Card.Title>{recipe.strMeal}</Card.Title>
         <Button  onClick={handleShow} variant="success">Get Recipe</Button>
       </Card.Body>
     </Card>  
 
     <Modal show={show} onHide={handleClose}>
     <Modal.Header closeButton>
-      <Modal.Title>Modal heading</Modal.Title>
+      <Modal.Title>{details.strMeal}</Modal.Title>
     </Modal.Header>
-    <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+    <Modal.Body>
+        <p>
+          {details.strInstructions}
+        </p>
+      </Modal.Body>
  
   </Modal>
   </>
