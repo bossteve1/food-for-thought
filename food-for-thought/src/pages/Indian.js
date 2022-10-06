@@ -19,6 +19,7 @@ function Indian() {
     <RecipeNav/>
     <Container>
       <Row>
+      <p className='fs-1 fw-italic text-center'>Indian Meals</p>
           {recipes.map((recipe) => (
             <Col xs={12} md={4}className='p-5'>
 
