@@ -1,5 +1,6 @@
 # food-for-thought
-A site where a user  is able to search for common and easy recipes to guide them in cooking 
+A site where a user  is able to search for common and easy recipes to guide them in cooking.
+
 It is built using React, Bootstrap for styling,MealDb API for the recipes data, and finally deployeed to vercel.
 
 ## Features
